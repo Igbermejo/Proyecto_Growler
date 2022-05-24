@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html {  
+    font-size:  62.5%;
+}
+body.fondo{ 
+    background-image: url(../img/21omxpw.jpg);
+    background-size: cover;
+}
+body{
+    font-family: 'Bebas Neue', cursive;
+    color: aliceblue;
+}
+/* Comienzo del Header*/
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.356);
+    height: 150px;
+
+}
+
+#navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 3em;
+    width: 800px;
+    line-height: 150px;
+}
+
+ul li{
+    display: inline-block;
+}   
+
+
+.logoHeader{
+    height: 150px;
+    width: 150px;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    width: 130px;
+    
+}
+.marcaLogo{
+    width: 150px;
+    height: 150px;
+    color: aliceblue;
+    font-size: 2.5em;
+    padding: 30% 0% 0% 0%;
+}
+.navMenu:hover{
+    background-color: black;
+    transition: .5s;
+}
+.navMenu{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* Fin del Header */
+/*Enlace Home*/
+#imagen{
+    background-image: url(../img/Cervezas-Artesanales-Esquire-W-add-.jpg);
+    background-size: cover;
+    height: 600px;
+}
+.bienvenida {
+    font-size: 10em;
+    color: antiquewhite;
+    padding: 200px 0px 0px 0px ;
+}
+.fundador {
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    }
+.descripcion{
+    color: antiquewhite;
+    font-style: normal;
+    font-size: 2em;
+
+}
+#medallas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.medalla p{
+     color: aliceblue;
+     font-size: 2em;
+}
+/*Enlace Novedades*/
+.novedades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5em;
+    color: aliceblue;
+    margin: 20px auto;
+
+}
+/*Enlace Contacto*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto{
+    margin: 20px auto;
+}
+.imagenContacto{
+    padding: 0% 30%;
+}
+/* Enlace Cervezas*/
+#clases{
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.estilos{
+    font-size: 5em;
+}
+.explicacionEstilos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px 0px 0px 0px;
+}
+.cervezas{
+    width: 100px;
+    height: 100px;
+}
+.ipa{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.scotish{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.porter{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+/*Enlace Proceso*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax (250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 2rem;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+.galeriaItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.galeriaItem:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: span 2;
+}
+.item2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: span 2;
+}
+.item4{
+    grid-row: span 2;
+}
+.item5{
+    grid-row: span 2;
+}
+@media screen and (max-width: 320px){
+    #header{
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 10px;
+        background-color: black;
+    }
+     .galeriaItem{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+     .footer{
+        background-color: black;
+    }
+
+
+
+}
+/* Comienzo del Footer */
+#enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+  
+}
+.redesSociales{
+    height: 50px;
+    width: 50px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.356);
+    height: 200px;
+}
+.navFooter{
+    float: right;
+}
