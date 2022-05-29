@@ -73,12 +73,19 @@ ul li{
     background-image: url(../img/Cervezas-Artesanales-Esquire-W-add-.jpg);
     background-size: cover;
     height: 600px;
+    align-items: center;
 }
 .bienvenida {
-    font-size: 10em;
+    font-size: 13em;
     color: antiquewhite;
-    padding: 200px 0px 0px 0px ;
+    position: relativess;
+    text-align: center;
+    padding-top: 200px;
 }
+.secFundador{
+    text-align: center;
+}
+
 .fundador {
     height: 300px;
     margin: 10px;
@@ -138,6 +145,9 @@ form{
     flex-direction: row;
     font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tituloEstilos{
+    text-align: center;
 }
 .estilos{
     font-size: 10em;
@@ -236,24 +246,6 @@ form{
 .item5{
     grid-row: span 2;
 }
-@media screen and (max-width: 320px){
-    #header{
-        flex-direction: column;
-        justify-content: space-between;
-        font-size: 10px;
-        background-color: black;
-    }
-     .galeriaItem{
-        grid-row: span 2;
-        grid-column: span 2;
-    }
-     .footer{
-        background-color: black;
-    }
-
-
-
-}
 /* Comienzo del Footer */
 #enlaces{
     display: flex;
@@ -268,8 +260,65 @@ form{
 }
 footer{
     background-color: rgba(0, 0, 0, 0.356);
-    height: 200px;
+    height: 150px;
 }
 .navFooter{
     float: right;
 }
+@media screen and (max-width: 480px){
+    #header{
+        flex-direction: column;
+        background-color: black;
+        height: auto;
+    }
+    #navegacion{
+        font-size: 1.1em;
+        width: auto;
+    }
+    .galeria{
+        display: grid;
+        grid-column: auto;
+    }
+    .item1{
+        display: grid;
+        grid-column: span 2;
+    }
+    .item2{
+        display: grid;
+        grid-column: span 2;
+    }
+   .item3{
+       display: grid;
+       grid-column: span 2;
+   }
+   .item4{
+       display: grid;
+       grid-column: span 2;
+   }
+   .item5{
+       display: grid;
+       grid-column: span 2;
+   }
+   .item6{
+       display: grid;
+       grid-column: span 2;
+   }
+    .footer{
+        background-color:antiquewhite;
+        height: 100px;
+        align-items: center;
+    }
+    .redesSociales{
+        height: 30px;
+        width: 30px;
+    }
+    #medallas{
+        display: flex;
+        flex-direction: column;
+    }
+    .bienvenida{
+        padding-top: 100px;
+    }
+    .fundador{
+        width: 300px;
+    }
