@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerveceria_Growler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body class="fondo">
@@ -38,23 +39,25 @@
         
     </header>
     <!--FIN DEL HEADER-->
+    <main>
     <section class="contacto">
         <picture>
-           <img  class="imagenContacto"  src="../img/beer-53.gif" alt="">
+           <img  class="imagenContacto img-fluid"  src="../img/beer-53.gif" alt="">
         </picture>
-    <form action method="post">
-        <label for="Nombre">Nombre:</label>
-         <input type="text" name="Nombre" required>
+    <form action method="post" class="mb-3">
+        <label for="Nombre" class="form-label">Nombre:</label>
+         <input class="form-control" type="text" name="Nombre" required>
          
          <label for="email">Email:</label>
-         <input type="email" name="email" required>
+         <input class="form-control" type="email" name="email" required>
 
          <label for="Comentarios">Comentarios:</label>
-         <textarea name="Comentarios" id="" cols="30" rows="10"></textarea>
+         <textarea class="form-control" name="Comentarios" id="" cols="30" rows="10"></textarea>
 
          <input type="submit" value="Enviar">
     </form>
 </section>
+</main>
     <!--FOOTER DE LA PAGINA-->
     <footer class="footer">
         <nav class="navFooter">
@@ -73,7 +76,7 @@
     </footer>
     <!--FIN DEL FOOTER-->
 
- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
 </body>
 </html>

@@ -125,7 +125,6 @@ ul li{
     font-size: 5em;
     color: aliceblue;
     margin: 20px auto;
-
 }
 /*Enlace Contacto*/
 form{
@@ -134,10 +133,20 @@ form{
     align-items: center;
 }
 .contacto{
-    margin: 20px auto;
+    margin: 20px auto;  
 }
 .imagenContacto{
-    padding: 0% 30%;
+   padding: 0% 25%;
+}
+
+.form-control{
+    width: 300px;
+}
+label{
+    font-size: 2em;
+}
+input {
+    font-size: 2em;
 }
 /* Enlace Cervezas*/
 #clases{
@@ -164,7 +173,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px 0px 0px 0px;
+   padding: 50px 0px 0px 0px;
 }
 .cervezas{
     width: 100px;
