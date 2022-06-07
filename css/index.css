@@ -330,4 +330,9 @@ footer{
     }
     .fundador{
         width: 300px;
+        object-fit: cover;
+    }
+    #clases{
+        display: flex;
+        flex-direction: column;
     }
