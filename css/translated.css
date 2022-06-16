@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*MISC*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none;
+  color: aliceblue; }
+
+ul li {
+  display: inline-block; }
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  color: aliceblue; }
+
+body.fondo {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-size: cover; }
+
+footer {
+  background-color: rgba(0, 0, 0, 0.356);
+  height: 100px; }
+  footer #enlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem; }
+    footer #enlaces .redesSociales {
+      height: 50px;
+      width: 50px; }
+
+.finFooter {
+  font-size: 1.5em;
+  text-align: center; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.356);
+  height: 150px; }
+  header #navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 3em;
+    width: 800px;
+    line-height: 150px; }
+    header #navegacion .navMenu {
+      padding: 10px 20px;
+      border-radius: 5px; }
+  header #logo {
+    display: flex;
+    flex-direction: row;
+    width: 130px; }
+    header #logo .logoHeader {
+      height: 150px;
+      width: 150px; }
+    header #logo .marcaLogo {
+      width: 150px;
+      height: 150px;
+      color: aliceblue;
+      font-size: 2.5em;
+      padding: 30% 0% 0% 0%; }
+
+.navMenu:hover {
+  background-color: black;
+  transition: .5s; }
+
+#imagen {
+  background-image: url(../img/Cervezas-Artesanales-Esquire-W-add-.jpg);
+  background-size: cover;
+  height: 600px;
+  align-items: center; }
+  #imagen .bienvenida {
+    font-size: 15em;
+    color: antiquewhite;
+    position: relativess;
+    text-align: center;
+    padding-top: 200px; }
+
+.secFundador {
+  text-align: center; }
+  .secFundador .descripcion {
+    color: antiquewhite;
+    font-style: normal;
+    font-size: 2em; }
+
+.fundador {
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; }
+
+.fundador:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
+
+#medallas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  #medallas .medalla p {
+    color: aliceblue;
+    font-size: 2em; }
+
+.medalla:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+  transition: transform 0.3s ease-in-out; }

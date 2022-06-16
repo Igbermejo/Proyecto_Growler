@@ -1,0 +1,52 @@
+#imagen{
+    background-image: url(../img/Cervezas-Artesanales-Esquire-W-add-.jpg);
+    background-size: cover;
+    height: 600px;
+    align-items: center;
+    .bienvenida {
+        font-size: 15em;
+        color: antiquewhite;
+        position: relativess;
+        text-align: center;
+        padding-top: 200px;
+    }
+}
+
+.secFundador{
+    text-align: center;
+    .descripcion{
+        color: antiquewhite;
+        font-style: normal;
+        font-size: 2em;
+    
+    }
+}
+
+.fundador {
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    }
+.fundador:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+#medallas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .medalla p{
+        color: aliceblue;
+        font-size: 2em;
+   }
+}
+
+
+.medalla:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+    transition: transform 0.3s ease-in-out;
+}
+
