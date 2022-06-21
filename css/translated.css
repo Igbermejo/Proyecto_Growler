@@ -22,6 +22,17 @@ body.fondo {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   background-size: cover; }
 
+/*color*/
+.primary {
+  color: aliceblue; }
+
+.secondary {
+  color: lightblue; }
+
+.alternativo {
+  color: cadetblue; }
+
+/*Font Size*/
 footer {
   background-color: rgba(0, 0, 0, 0.356);
   height: 100px; }
@@ -38,6 +49,14 @@ footer {
   font-size: 1.5em;
   text-align: center; }
 
+@media screen and (max-width: 480px) {
+  .footer {
+    height: 100px;
+    align-items: center; }
+  .redesSociales {
+    height: 30px;
+    width: 30px; } }
+
 header {
   display: flex;
   flex-direction: row;
@@ -48,8 +67,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 3em;
-    width: 800px;
+    font-size: 10em;
+    width: auto;
     line-height: 150px; }
     header #navegacion .navMenu {
       padding: 10px 20px;
@@ -72,13 +91,100 @@ header {
   background-color: black;
   transition: .5s; }
 
+@media screen and (max-width: 480px) {
+  #header {
+    flex-direction: column;
+    background-color: black;
+    height: auto;
+    width: auto; }
+  #navegacion {
+    font-size: 2em; } }
+
+ul li {
+  justify-content: space-between;
+  width: auto;
+  font-size: 0.2em; }
+
+#clases {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue; }
+  #clases .imagenEstilos {
+    border-radius: 3rem;
+    transition: transform 0.3s ease-in-out;
+    height: auto; }
+    #clases .imagenEstilos .imagenEstilos:hover {
+      filter: opacity(0.9);
+      transform: scale(1.04); }
+
+.estilos {
+  font-size: 13em;
+  text-align: center;
+  color: aliceblue; }
+
+.explicacionEstilos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: none;
+  gap: none;
+  padding: 50px 0px 0px 0px; }
+  .explicacionEstilos .cervezas {
+    width: 100px;
+    height: 100px; }
+  .explicacionEstilos .ipa, .explicacionEstilos .scotish, .explicacionEstilos .porter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: none;
+    gap: 10px;
+    font-size: 2em;
+    transition: transform 0.3s ease-in-out;
+    color: cadetblue; }
+  .explicacionEstilos .ipa:hover, .explicacionEstilos .scotish:hover, .explicacionEstilos .porter:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04); }
+  .explicacionEstilos .scotish:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04); }
+  .explicacionEstilos .porter:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04); }
+
+@media screen and (max-width: 480px) {
+  #clases {
+    display: flex;
+    flex-direction: column;
+    font-size: 1,5em; }
+  .estilos {
+    font-size: 5em; }
+  .estiloLetra {
+    font-size: 0.8em; } }
+
+.contacto {
+  margin: 20px auto; }
+  .contacto .imagenContacto {
+    padding: 0% 25%; }
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contacto form .form-control {
+      width: 300px; }
+    .contacto form label {
+      font-size: 2em; }
+    .contacto form input {
+      font-size: 2em; }
+
 #imagen {
   background-image: url(../img/Cervezas-Artesanales-Esquire-W-add-.jpg);
   background-size: cover;
   height: 600px;
   align-items: center; }
   #imagen .bienvenida {
-    font-size: 15em;
+    font-size: 13em;
     color: antiquewhite;
     position: relativess;
     text-align: center;
@@ -87,7 +193,7 @@ header {
 .secFundador {
   text-align: center; }
   .secFundador .descripcion {
-    color: antiquewhite;
+    color: lightblue;
     font-style: normal;
     font-size: 2em; }
 
@@ -106,10 +212,96 @@ header {
   flex-direction: row;
   justify-content: space-around; }
   #medallas .medalla p {
-    color: aliceblue;
+    color: cadetblue;
     font-size: 2em; }
 
 .medalla:hover {
   filter: opacity(0.9);
   transform: scale(1.04);
   transition: transform 0.3s ease-in-out; }
+
+@media screen and (max-width: 480px) {
+  #medallas {
+    display: flex;
+    flex-direction: column; }
+  .bienvenida {
+    font-size: 5em;
+    padding-top: 100px; }
+  .fundador {
+    width: 300px;
+    object-fit: cover; } }
+
+.novedades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5em;
+  color: aliceblue;
+  margin: 20px auto; }
+
+@media screen and (max-width: 480px) {
+  .novedades {
+    font-size: 3em; } }
+
+.proceso {
+  text-align: center;
+  font-size: 13em; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax 250px, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  gap: 2rem;
+  padding: 20px;
+  grid-auto-flow: dense; }
+  .galeria .galeriaItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 3em;
+    color: lavenderblush; }
+  .galeria .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: span 2; }
+  .galeria .item2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: span 2; }
+  .galeria .item4 {
+    grid-row: span 2; }
+  .galeria .item5 {
+    grid-row: span 2; }
+  .galeria .galeriaItem:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04); }
+
+@media screen and (max-width: 480px) {
+  .proceso {
+    font-size: 5em; }
+  .galeria {
+    display: grid;
+    grid-column: auto; }
+  .item1 {
+    display: grid;
+    grid-column: span 2; }
+  .item2 {
+    display: grid;
+    grid-column: span 2; }
+  .item3 {
+    display: grid;
+    grid-column: span 2; }
+  .item4 {
+    display: grid;
+    grid-column: span 2; }
+  .item5 {
+    display: grid;
+    grid-column: span 2; }
+  .item6 {
+    display: grid;
+    grid-column: span 2; } }

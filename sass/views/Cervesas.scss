@@ -1,0 +1,67 @@
+#clases{
+    display: flex;
+    flex-direction: row;
+    font-size: $textoChico;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: map-get($colores, secondary);
+    .imagenEstilos{
+        border-radius: 3rem;
+        transition: transform 0.3s ease-in-out;
+        height: auto;
+        .imagenEstilos:hover{
+            filter: opacity(0.9);
+            transform: scale(1.04);
+        }
+    }
+}
+.estilos{
+    font-size: $textoGrande;
+    text-align: center;
+    color: map-get($colores, primary);
+}
+.explicacionEstilos{
+    @include flex(column, space-around, none, none);
+   padding: 50px 0px 0px 0px;
+   .cervezas{
+    width: 100px;
+    height: 100px; 
+ }
+   .ipa{
+       @include flex(row, space-around, none, 10px);
+         font-size: $textoChico;
+         transition: transform 0.3s ease-in-out;
+         color: map-get($colores, alternativo);
+}
+     .ipa:hover{
+         filter: opacity(0.9);
+         transform: scale(1.04);
+         }
+ .scotish{
+    @extend .ipa
+ }
+.scotish:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+    }
+.porter{
+    @extend .ipa
+ }
+.porter:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+    }
+
+}
+@media screen and (max-width: 480px){
+    #clases{
+        display: flex;
+        flex-direction: column;
+        font-size: 1,5em;
+    }
+    .estilos{
+        font-size: 5em;
+    }
+   .estiloLetra{
+    font-size: 0.8em;
+   }
+}

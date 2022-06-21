@@ -115,16 +115,16 @@ ul li{
     transition: transform 0.3s ease-in-out;
 }*/
 /*Enlace Novedades*/
-.novedades{
+/*.novedades{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 5em;
     color: aliceblue;
     margin: 20px auto;
-}
+}*/
 /*Enlace Contacto*/
-form{
+/*form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,9 +144,9 @@ label{
 }
 input {
     font-size: 2em;
-}
+}*/
 /* Enlace Cervezas*/
-#clases{
+/*#clases{
     display: flex;
     flex-direction: row;
     font-size: 2em;
@@ -211,7 +211,7 @@ input {
     transform: scale(1.04);
     }
 /*Enlace Proceso*/
-.galeria{
+/*.galeria{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax (250px, 1fr));
     grid-auto-rows: minmax(200px, auto);
@@ -248,7 +248,7 @@ input {
 }
 .item5{
     grid-row: span 2;
-}
+}*/
 /* Comienzo del Footer */
 /*#enlaces{
     display: flex;
@@ -268,7 +268,7 @@ footer{
 .navFooter{
     float: right;
 }*/
-@media screen and (max-width: 480px){
+/*@media screen and (max-width: 480px){
     #header{
         flex-direction: column;
         background-color: black;

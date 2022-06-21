@@ -1,0 +1,17 @@
+/*color*/
+$colores: (
+    primary: aliceblue,
+    secondary: lightblue,
+    alternativo: cadetblue
+);
+@each $color, $valor in $colores {
+    .#{ $color } {
+        color: #{$valor};
+    }
+}
+
+/*Font Size*/
+
+$textoGrande: 13em;
+$textoMedio: 5em;
+$textoChico: 2em;

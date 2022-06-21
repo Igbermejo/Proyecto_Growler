@@ -9,8 +9,8 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-size: 3em;
-        width: 800px;
+        font-size: 10em;
+        width: auto;
         line-height: 150px;
         .navMenu{
             padding: 10px 20px;
@@ -43,3 +43,18 @@ header{
     background-color: black;
     transition: .5s;
 }
+@media screen and (max-width: 480px){
+    #header{
+        flex-direction: column;
+        background-color: black;
+        height: auto;
+        width: auto;
+    }
+    #navegacion{
+        font-size: $textoChico;
+    }
+}
+ul li{
+    justify-content: space-between;
+    width: auto;
+    font-size: 0.2em};

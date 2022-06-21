@@ -4,7 +4,7 @@
     height: 600px;
     align-items: center;
     .bienvenida {
-        font-size: 15em;
+        font-size: $textoGrande;
         color: antiquewhite;
         position: relativess;
         text-align: center;
@@ -15,9 +15,9 @@
 .secFundador{
     text-align: center;
     .descripcion{
-        color: antiquewhite;
+        color: map-get($colores, secondary);
         font-style: normal;
-        font-size: 2em;
+        font-size: $textoChico;
     
     }
 }
@@ -38,8 +38,8 @@
     flex-direction: row;
     justify-content: space-around;
     .medalla p{
-        color: aliceblue;
-        font-size: 2em;
+        color: map-get($colores, alternativo);
+        font-size: $textoChico;
    }
 }
 
@@ -49,4 +49,20 @@
     transform: scale(1.04);
     transition: transform 0.3s ease-in-out;
 }
+@media screen and (max-width: 480px){
+    #medallas{
+        display: flex;
+        flex-direction: column;
+    }
+    .bienvenida{
+        font-size: 5em;
+        padding-top: 100px;
+    }
+    .fundador{
+        width: 300px;
+        object-fit: cover;
+    }
+}
+
+
 
