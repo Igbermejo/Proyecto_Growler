@@ -55,13 +55,16 @@
         flex-direction: column;
     }
     .bienvenida{
-        font-size: 5em;
+        font-size: 2em;
         padding-top: 100px;
     }
     .fundador{
         width: 300px;
         object-fit: cover;
     }
+}
+.presBienvenida{
+    font-size: 0.5em;
 }
 
 

@@ -9,7 +9,7 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-size: 10em;
+        font-size: 2em;
         width: auto;
         line-height: 150px;
         .navMenu{
@@ -43,7 +43,7 @@ header{
     background-color: black;
     transition: .5s;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 720px){
     #header{
         flex-direction: column;
         background-color: black;
@@ -53,8 +53,30 @@ header{
     #navegacion{
         font-size: $textoChico;
     }
-}
+
 ul li{
     justify-content: space-between;
     width: auto;
-    font-size: 0.2em};
+    font-size: 1em;}
+  
+}
+@media screen and (max-width: 480px){
+    #navegacion{
+        font-size: 0.3em;
+       }
+    #header{
+        flex-direction: column;
+        background-color: black;
+        height: auto;
+        width: auto;
+    }
+    #navegacion{
+        font-size: $textoChico;
+    }
+
+ul li{
+    justify-content: space-between;
+    width: auto;
+    font-size: 0.5em;}
+  
+}

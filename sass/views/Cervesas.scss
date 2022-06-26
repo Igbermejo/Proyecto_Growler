@@ -52,6 +52,17 @@
     }
 
 }
+@media screen and (max-width: 1260px){
+    #clases{
+        display: flex;
+        flex-direction: column;
+        font-size: 1,5em;
+    }
+}
+.estilos{
+    font-size: 7em;
+}
+
 @media screen and (max-width: 480px){
     #clases{
         display: flex;

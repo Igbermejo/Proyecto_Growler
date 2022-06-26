@@ -5,6 +5,9 @@
     font-size: $textoMedio;
     color: map-get($colores, primary);
     margin: 20px auto;
+    .imgProximamente{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px){
